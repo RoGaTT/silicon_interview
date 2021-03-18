@@ -10,7 +10,7 @@ const Home: FC<PropsType> = () => {
   console.log('adas');
   return (
     <div className={classes.root}>
-      dasda
+      Look at right bottom corner!!!
     </div>
   );
 };

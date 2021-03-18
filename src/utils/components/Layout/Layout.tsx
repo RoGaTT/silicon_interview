@@ -1,4 +1,6 @@
+import Widget from '@/ui/Widget';
 import React, { FC } from 'react';
+import classes from './Layout.module.scss';
 
 type PropsType = {
     children: React.ReactNode
@@ -7,8 +9,9 @@ type PropsType = {
 const Layout: FC<PropsType> = ({ children }) => {
   console.log('adsada');
   return (
-    <div>
+    <div className={classes.root}>
       {children}
+      <Widget />
     </div>
   );
 };

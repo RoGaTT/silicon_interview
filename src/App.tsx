@@ -5,10 +5,7 @@ import Layout from '@/utils/components/Layout';
 import ROUTES from '@/const/routes';
 import '@/assets/styles/index.scss';
 
-const HomePage = lazy(() => import('./pages/Home'));
-const SignUpPage = lazy(() => import('./pages/SignUp'));
-const SignInPage = lazy(() => import('./pages/SignIn'));
-const NotFoundPage = lazy(() => import('./pages/NotFound'));
+const HomePage = lazy(() => import('@/pages/Home'));
 
 const App: FC = () => (
   <>
@@ -36,9 +33,6 @@ const App: FC = () => (
       >
         <Switch>
           <Route path={ROUTES.HOME} exact component={HomePage} />
-          <Route path={ROUTES.SIGN_IN} exact component={SignInPage} />
-          <Route path={ROUTES.SIGN_UP} exact component={SignUpPage} />
-          <Route path={ROUTES.NOT_FOUND} exact component={NotFoundPage} />
         </Switch>
       </Suspense>
     </Layout>

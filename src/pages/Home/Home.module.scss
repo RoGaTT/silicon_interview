@@ -1,3 +1,6 @@
+@import '@/assets/styles/variables.scss';
+@import '@/assets/styles/mixins.scss';
+
 @include media-full-hd {
   @import './styles/full-hd';
 }
